@@ -1,0 +1,26 @@
+#include <stdio.h>
+#define texto "operadores aritmeticos"
+
+int main()
+{
+    printf("%s \n", texto);
+    int a, b, soma, subtr, mult, divi;
+    printf("digite o primeiro numero:");
+    scanf("%d", &a);
+    printf("digite o segundo numero:");
+    scanf("%d", &b);
+    
+    soma= a + b;
+   subtr= a - b ;
+   mult= a * b ;
+   divi= a / b ;
+   
+   printf("resultados: \n");
+   printf("soma:%d \n", soma);
+   printf("subtr: %d \n",subtr);
+   printf("mult: %d \n", mult);
+   printf("divi: %d \n", divi);
+   
+ return 0; 
+}
+ 
