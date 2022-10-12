@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main()
+{
+    int d;
+    
+    printf("digite um numero entre 1 e 7: \n");
+    scanf("%d", &d);
+    switch(d){
+        case 1:
+        printf("segunda feira. \n");
+        break;
+        case 2:
+        printf("terça feira. \n");
+        break;
+        case 3:
+        printf("quarta feira. \n");
+        break;
+        case 4:
+        printf("quinta feira. \n");
+        break;
+        case 5:
+        printf("sexta feira. \n");
+        break;
+        case 6:
+        printf("sabado. \n");
+        break;
+        case 7:
+        printf("domingo. \n");
+        break;
+        
+    }
+    return 0;
+}
+    
