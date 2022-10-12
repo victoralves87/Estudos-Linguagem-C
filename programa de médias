@@ -1,0 +1,18 @@
+#include <stdio.h>
+float n1, n2;
+
+int main()
+{
+    printf(" insira sua primeira nota: \n");
+    scanf("%f",&n1);
+    printf("insira sua segunda nota: \n");
+    scanf("%f",&n2);
+    float m=(n1 + n2) / 2 ;
+    if (m >= 7.0){
+        printf("parabéns você foi aprovado!");
+    } else{
+        printf("que pena! você foi reprovado.");
+    }
+
+    return 0;
+}
