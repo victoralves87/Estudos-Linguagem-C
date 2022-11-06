@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int num;
+
+
+int main()
+{
+    printf("MENU: \n \n");
+    printf("1.soma de dois numeros \n\n");
+    printf("2.verificar se um numero e primo \n\n");
+    printf("3.série de numeros impares \n\n");
+    printf("escolha a opçao desejada:\n");
+    scanf("%d", &num);
+    
+    switch(num)
+    {
+        case 1:
+        printf("codigo da soma \n");
+        break;
+        case 2:
+        printf("codigo do numero primo \n");
+        break;
+        case 3: 
+        printf("codigo da serie de numero impar \n");
+        break;
+        
+        default:
+        printf("opçao invalida!");
+        
+    }
+    
+    
+
+    return 0;
+}
