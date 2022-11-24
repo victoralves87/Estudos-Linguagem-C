@@ -1,0 +1,18 @@
+#include <stdio.h>
+int numero = 15;
+void escrevaDobro();
+
+int main()
+{
+    printf("o numero é: %d \n", numero);
+    
+    escrevaDobro();
+    
+    return 0;
+}
+
+void escrevaDobro() {
+    
+    int dobro = numero * 2;
+    printf("o dobro é: %d", dobro);
+}
