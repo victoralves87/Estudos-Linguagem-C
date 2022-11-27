@@ -1,0 +1,102 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale (LC_ALL, "");
+    char nome[50];
+    int num, num1, num2 ;
+    int primo, resultado, i;
+    int soma;
+    int n;
+    int x=1;
+    
+  
+    
+    
+    char login[15] = "silva"; 
+    char login1[15]; 
+    char senha[100] = "silva";
+    char senha1[15]; 
+    
+    printf("LOGIN: ");
+    scanf("%s",login1); 
+    printf("SENHA: ");
+    scanf("%s", senha1);
+    
+    if (strcmp(login, login1) == 0) 
+    {
+    	printf("\nSeja bem vindo Silva!\n\n");
+    }
+    else
+    {
+    	printf("Login Inválido\n");
+    }
+    
+    printf("MENU: \n \n");
+    printf("1.soma de dois números \n\n");
+    printf("2.verificar se um número é primo \n\n");
+    printf("3.verificar se um número é impar \n\n");
+    printf("escolha a opção desejada:\n");
+    scanf("%d", &num);
+    
+    switch(num)
+    {
+        case 1:
+        printf("digite um numero: \n");
+        scanf("%d", &num1);
+        printf("digite outro numero: \n");
+        scanf("%d", &num2);
+        soma = num1 + num2;
+        
+        printf("a soma entre eles é: %d", soma);
+        
+        break;
+        case 2:
+        printf("digite um número:");
+    scanf("%d", &n);
+    
+    if(n<=1){
+        printf("esse número não é primo");
+        
+    }
+    else{
+        for(i=2; i<n; i++){
+            if(n%i==0){
+                printf("Esse número não é primo");
+                break;
+            }
+        }
+        if(i==n){
+            printf("Esse número é primo");
+        }
+        break;
+    }
+        case 3: 
+        printf("digite um numero:");
+    scanf("%d", &num1);
+
+    int x=1;
+    int num1;
+    printf("digite um numero:");
+    scanf("%d", &num1);
+    
+    while( x < num1){
+        printf("%d",x);
+        x= x + 2;
+        
+    }
+    
+        
+    }
+        break;
+        
+        default:
+        printf("opçao invalida!");
+        
+    }
+    
+    return 0;
+}
