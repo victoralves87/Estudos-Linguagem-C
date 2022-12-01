@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <math.h>
+#include <locale.h>
+#include <stdlib.h>
+
+float baskara(float a, float b, float c);
+
+void main()
+{
+    float a=1, b=2, c=1;
+    baskara(a,b,c);
+    
+    
+    
+
+    
+}
+
+float baskara(float a, float b, float c){
+    float delta= pow(b,2)- (4*a*c);
+    if(delta<0){
+        printf("não existe raizes reais");}
+        else if(delta=0){
+            printf("x1=x2=%f",-(b/(2*0)));}
+            else{
+                float raizdelta=sqrt(delta);
+                printf("x1=%.3f\n", (-b+raizdelta)/(2*a));
+                printf("x2=%.3f", (-b-raizdelta)/(2*a));
+                return 0;
+            }
+}
